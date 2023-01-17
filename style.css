@@ -1,0 +1,119 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbar::before{
+    background-color: rgb(245, 237, 237);
+    position: sticky;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+li{ 
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 70px;    
+}
+a{
+    display: block;
+    text-decoration: none;
+    padding: 2px 20px;
+    margin: 2px;
+    color: rgb(240, 247, 247);    
+}
+li :hover{
+  background-color: burlywood;
+  color: rgb(1, 5, 8);
+  border-radius: 8px;
+}
+#logo img{
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 100px;
+}
+
+
+
+
+/* HOME */
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 0px; */
+
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    height: 800px;
+    width: 100%;
+    z-index: -1;
+    background: url('../back.jpg') no-repeat center center/cover; 
+ } 
+
+ #home h1{
+     color: aliceblue;
+      margin: 30px;
+ }
+ #home p{
+     color: aliceblue;
+ }
+
+
+
+
+ /* UTILITY CLASSES */
+
+ .h-primary{
+     font-size: 3.8rem;
+     /* padding: 30px; */
+     margin: 320px;
+     display: flex;
+     justify-content: center;
+     align-items: center; 
+     color: rgb(15, 14, 14);
+ }
+ .h-secoundary{
+    font-size: 1.5rem;
+    margin: 2px;
+    padding: 14px;
+    color: rgb(19, 21, 22);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-family: monospace;
+
+ }
+ .btn{
+     margin: 30px;
+     border-radius: 30px;
+     background-color: rgb(188, 157, 117);
+     width: 100px;
+     padding: 10px;
+     border: 3px solid rgb(244, 242, 238);
+     cursor: pointer;
+ }
+ .btn:hover{
+     background-color: rgb(133, 83, 18);
+     color: white;
+ }
+
+
+
